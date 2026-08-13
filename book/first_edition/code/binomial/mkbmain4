@@ -1,0 +1,1 @@
+f77 -o bmain4 bmain4.f bsubroutines.o binv.o -u

@@ -1,0 +1,11 @@
+stage  1 no. successes    0 ci   0.0  52.2
+stage  1 no. successes    1 ci   0.5  71.6
+stage  2 no. successes    2 ci   5.3  71.7
+stage  2 no. successes    3 ci   8.5  72.6
+stage  2 no. successes    4 ci  13.2  75.9
+stage  2 no. successes    5 ci  19.1  81.6
+stage  2 no. successes    6 ci  26.3  87.8
+stage  2 no. successes    7 ci  34.8  93.3
+stage  2 no. successes    8 ci  44.4  97.5
+stage  2 no. successes    9 ci  55.5  99.7
+stage  2 no. successes   10 ci  69.2 100.0

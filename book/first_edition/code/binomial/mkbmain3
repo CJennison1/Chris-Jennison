@@ -1,0 +1,1 @@
+f77 -o bmain3 bmain3.f bsubroutines.o -u

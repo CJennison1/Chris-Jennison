@@ -1,0 +1,2 @@
+cat header gst1.f gst2.f ersp2.f norcdf.f invnor.f finish > subroutines.txt
+cat header gst1.f gst2.f ersp2.f norcdf.f invnor.f finish > subroutines.f

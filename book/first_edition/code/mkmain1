@@ -1,0 +1,1 @@
+f77 -o main1 main1.f gst1.o norcdf.o invnor.o -lnag -u

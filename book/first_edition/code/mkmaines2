@@ -1,0 +1,1 @@
+f77 -o maines2 maines2.f ersp2.o gst2.o norcdf.o invnor.o -lnag -u

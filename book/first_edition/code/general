@@ -1,0 +1,151 @@
+<h1>Computer programs for group sequential tests</h1>
+
+<p>
+Copyright, 24 August 1999, C Jennison.
+<a href =
+"mailto:c.jennison@bath.ac.uk"><i>c.jennison@bath.ac.uk</i></a>
+
+<p>
+All rights reserved.
+
+<p>
+Permission to use, copy, modify, and distribute this software
+and its documentation for any purpose, without fee, and without
+a written agreement is hereby granted, provided that the above
+copyright notice appears in all copies.
+
+<p>
+This code is released on an "as is" basis.  There is no warranty.
+Users are warned that the developers are not liable for any
+errors or damages that occur as a result of using this code.
+
+<p>
+If you find these programs of help in your research we would ask
+that you acknowledge their source in reports and publications.
+
+<p>
+<hr>
+
+<p>
+Programs presented here perform calculations to construct and evaluate
+group sequential tests.  They are provided as a service to readers of
+<a href="http://people.bath.ac.uk/mascj/book/first_edition/general"><b>Group
+Sequential Methods with Applications to Clinical Trials</b></a>
+by Christopher Jennison and Bruce W Turnbull.
+
+<p>
+The programs are presented using the notation of the book and, in
+particular, the method of computation for normally distributed test
+statistics is as described in our Chapter 19.
+
+<p>
+We have called on functions and subroutines in the NAG library for
+certain standard calculations and you will need to substitute these if
+you do not have access to the NAG library.  We have created simple
+functions and subroutines which do nothing other than call the NAG
+library so that there is just one place to make each replacement.
+
+<p>
+We would appreciate evidence of any errors or difficulties in using
+the programs -- but note we only claim to provide subroutines and
+program templates to help you in writing your own programs.
+More user-friendly software is available commercially in the packages
+EaSt and PEST.
+
+<p>
+We are extending this collection of programs as time permits.  We hope,
+eventually, to include routines for implementing all the key methods
+reported in the book.  If you have a particular request please send
+email to <a href =
+"mailto:c.jennison@bath.ac.uk"><i>c.jennison@bath.ac.uk</i></a>
+-- but understand that we cannot make any firm promises.
+
+<p>
+<hr>
+<p>
+To retrieve subroutines or a main program
+<ul>
+<li> Click on the highlighted name.  A listing will appear in the window.
+<li> Click on File (top left hand corner) and select the Save option to
+save as a FORTRAN file -- in text format.  The program should be ready to
+compile and use.
+</ul>
+
+<p>
+<hr>
+<p>
+Programs for normal response variables
+<ul>
+<li><a href="http://people.bath.ac.uk/mascj/book/first_edition/programs/subroutines.f">
+<b>Subroutines</b></a> a collection of subroutines (all together in a
+single file)
+<ul>
+<p>
+<li> GST1    calculates properties of a specified group sequential
+one-sided test.
+<li> GST2    calculates properties of a specified group sequential
+two-sided test.
+<li> ERSP2   creates boundaries for a two-sided error spending test.
+<li> NORCDF  returns the cumulative distribution of a standard normal
+distribution.
+<li> INVNOR  returns a quantile of the standard normal distribution.
+<p>
+</ul>
+<li> Main programs
+<ul>
+<p>
+<li><a href="http://people.bath.ac.uk/mascj/book/first_edition/programs/main1.f">
+<b>MAIN1</b></a> creates one-sided Pampallona & Tsiatis tests and calls
+the subroutine GST1 to evaluate the tests' properties.
+<li><a href="http://people.bath.ac.uk/mascj/book/first_edition/programs/main2.f">
+<b>MAIN2</b></a> creates two-sided boundaries of Pocock, O'Brien & Fleming
+and, Wang & Tsiatis tests and calls the subroutine GST2 to evaluate the
+tests' properties.
+<li><a href="http://people.bath.ac.uk/mascj/book/first_edition/programs/maines2.f">
+<b>MAINES2</b></a> creates two-sided boundaries using an error spending
+function and calls the subroutine GST2 to evaluate the tests' properties.
+<p>
+</ul>
+</ul>
+
+<p>
+<hr>
+<p>
+Programs for binomial response variables
+<ul>
+<li><a href="http://people.bath.ac.uk/mascj/book/first_edition/programs/binomial/bsubroutines.f">
+<b>Subroutines</b></a> a collection of subroutines (all together in a
+single file)
+<ul>
+<p>
+<li> BGST    calculates exit probabilities through upper and lower
+boundaries for a group sequential test with Bernoulli responses.
+<li> BPCI    calculates probabilities of a group sequential test for
+Bernoulli responses terminating in a more extreme state than a
+particular observed outcome.
+<li> BPRCAL    calculates the distribution and cumulative distribution
+function of a Binomial(n,p) random variable.
+<li> FINDCI   calculates a confidence interval for a Bernoulli success
+probability on termination of a group sequential test.
+<p>
+</ul>
+<li> Main programs
+<ul>
+<p>
+<li><a href="http://people.bath.ac.uk/mascj/book/first_edition/programs/binomial/bmain1.f">
+<b>BMAIN1</b></a> produces a table of confidence intervals for outcomes
+of a 7 stage test taken from MIL STD 105D, plan Q 1.0.
+<li><a href="http://people.bath.ac.uk/mascj/book/first_edition/programs/binomial/bmain2.f">
+<b>BMAIN2</b></a> produces a table of confidence intervals for outcomes
+of a 3 stage test taken from Fleming (Biometrics, 1982).
+<li><a href="http://people.bath.ac.uk/mascj/book/first_edition/programs/binomial/bmain3.f">
+<b>BMAIN3</b></a> calculates error rates and expected sample sizes under
+two values of the success probability for a 3 stage test taken from
+Fleming (Biometrics, 1982).
+<li><a href="http://people.bath.ac.uk/mascj/book/first_edition/programs/binomial/bmain4.f">
+<b>BMAIN4</b></a> produces a table of confidence intervals for outcomes
+of a 2 stage test with early stopping at stage 1 only for a low number of
+successes.
+</ul>
+</ul>
+

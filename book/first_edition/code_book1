@@ -1,0 +1,126 @@
+<head>
+<h1>Computer programs for group sequential tests</h1>
+
+<p>
+We are making available for downloading some of the FORTRAN code used to
+construct group sequential tests and to calculate their properties.
+
+<p>
+Copyright, 24 August 1999, C Jennison.
+<a href =
+"mailto:c.jennison@bath.ac.uk"><i>c.jennison@bath.ac.uk</i></a>
+
+<p>
+All rights reserved.
+
+<p>
+This code is released on an "as is" basis.  There is no warranty.
+Users are warned that the developers are not liable for any
+errors or damages that occur as a result of using this code.
+
+<hr>
+
+<p>
+Programs presented here perform calculations to construct and evaluate
+group sequential tests.  They are provided as a service to readers.
+
+<p>
+The programs are presented using the notation of the book and, in
+particular, the method of computation for normally distributed test
+statistics is as described in our Chapter 19.
+
+<p>
+We have called on functions and subroutines in the NAG library for
+certain standard calculations and you will need to substitute these if
+you do not have access to the NAG library.  We have created simple
+functions and subroutines which do nothing other than call the NAG
+library so that there is just one place to make each replacement.
+
+<hr>
+<p>
+To retrieve subroutines or a main program
+<ul>
+<li> Click on the highlighted name.  A listing will appear in the window.
+<li> Click on File (top left hand corner) and select the Save option to
+save as a FORTRAN file in text format.  The program should be ready to
+compile and use.
+</ul>
+
+<p>
+<hr>
+<p>
+Programs for normal response variables
+<ul>
+<li><a href="code/subroutines.f">
+<b>subroutines</b></a> a collection of subroutines (all together in a
+single file)
+<ul>
+<p>
+<li> gst1    calculates properties of a specified group sequential
+one-sided test.
+<li> gst2    calculates properties of a specified group sequential
+two-sided test.
+<li> ersp2   creates boundaries for a two-sided error spending test.
+<li> norcdf  returns the cumulative distribution of a standard normal
+distribution.
+<li> invnor  returns a quantile of the standard normal distribution.
+<p>
+</ul>
+<li> Main programs
+<ul>
+<p>
+<li><a href="code/main1.f">
+<b>main</b></a> creates one-sided Pampallona & Tsiatis tests and calls
+the subroutine GST1 to evaluate the tests' properties.
+<li><a href="code/main2.f">
+<b>main2</b></a> creates two-sided boundaries of Pocock, O'Brien & Fleming
+and, Wang & Tsiatis tests and calls the subroutine GST2 to evaluate the
+tests' properties.
+<li><a href="code/maines2.f">
+<b>maines2</b></a> creates two-sided boundaries using an error spending
+function and calls the subroutine GST2 to evaluate the tests' properties.
+<p>
+</ul>
+</ul>
+
+<p>
+<hr>
+<p>
+Programs for binomial response variables
+<ul>
+<li><a href="code/binomial/bsubroutines.f">
+<b>bsubroutines</b></a> a collection of subroutines (all together in a
+single file)
+<ul>
+<p>
+<li> bgst    calculates exit probabilities through upper and lower
+boundaries for a group sequential test with Bernoulli responses.
+<li> bpci    calculates probabilities of a group sequential test for
+Bernoulli responses terminating in a more extreme state than a
+particular observed outcome.
+<li> bprcal    calculates the distribution and cumulative distribution
+function of a Binomial(n,p) random variable.
+<li> findci   calculates a confidence interval for a Bernoulli success
+probability on termination of a group sequential test.
+<p>
+</ul>
+<li> Main programs
+<ul>
+<p>
+<li><a href="code/binomial/bmain1.f">
+<b>bmain1</b></a> produces a table of confidence intervals for outcomes
+of a 7 stage test taken from MIL STD 105D, plan Q 1.0.
+<li><a href="code/binomial/bmain2.f">
+<b>bmain</b></a> produces a table of confidence intervals for outcomes
+of a 3 stage test taken from Fleming (Biometrics, 1982).
+<li><a href="code/binomial/bmain3.f">
+<b>bmain3</b></a> calculates error rates and expected sample sizes under
+two values of the success probability for a 3 stage test taken from
+Fleming (Biometrics, 1982).
+<li><a href="code/binomial/bmain4.f">
+<b>bmain4</b></a> produces a table of confidence intervals for outcomes
+of a 2 stage test with early stopping at stage 1 only for a low number of
+successes.
+</ul>
+</ul>
+

@@ -1,0 +1,8 @@
+
+ p = 0.1000      p(exit upper boundary) =  0.06258
+                 p(exit lower boundary) =  0.93742
+                         E(sample size) =  24.7814
+
+ p = 0.3000      p(exit upper boundary) =  0.92911
+                 p(exit lower boundary) =  0.07089
+                         E(sample size) =  21.6373
